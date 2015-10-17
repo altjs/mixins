@@ -1,0 +1,25 @@
+{
+  "name": "alt-mixins",
+  "version": "1.0.0",
+  "description": "Mixins for use with Alt and react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:altjs/mixins.git"
+  },
+  "keywords": [
+    "mixins",
+    "react",
+    "alt",
+    "flux"
+  ],
+  "author": "Josh Perez <josh@goatslacker.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/altjs/mixins/issues"
+  },
+  "homepage": "https://github.com/altjs/mixins"
+}
