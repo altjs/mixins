@@ -64,8 +64,8 @@ var AltManagerMixin = {
       throw new ReferenceError('registerAction has not been is defined')
     }
 
-    var storeName = Store.name
-    var actionName = Action.name
+    var storeName = Store.displayName || Store.name
+    var actionName = Action.displayName || Action.name
 
     this.action = props.alt.getActions(actionName)
     this.store = props.alt.getStore(storeName)
@@ -73,7 +73,7 @@ var AltManagerMixin = {
     if (!this.action) {
       props.alt.addActions(actionName, Action)
       this.action = props.alt.getActions(actionName)
-      this.store = props.alt.createStore(Store, null, props.alt)
+      this.store = props.alt.createStore(Store, storeName, props.alt)
       if (this.onNewAlt) {
         this.onNewAlt(this.store.getState(), props)
       }
